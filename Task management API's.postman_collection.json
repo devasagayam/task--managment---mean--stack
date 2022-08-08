@@ -1,0 +1,356 @@
+{
+	"info": {
+		"_postman_id": "161f5661-8aef-424f-b745-79f2170c3926",
+		"name": "Task management API's",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18084816"
+	},
+	"item": [
+		{
+			"name": "Get lists",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MmYwYTAxYWVhNDFlOGFjYTMzNTZjMjMiLCJpYXQiOjE2NTk5MzY3OTQsImV4cCI6MTY2MDU0MTU5NH0.0XGrS1ZWBbbWCFScG4sLxJM1QU5Vhw6jdEIzSYwpEII",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/v2/list/lists",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"v2",
+						"list",
+						"lists"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get task of lis",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MmYwYTAxYWVhNDFlOGFjYTMzNTZjMjMiLCJpYXQiOjE2NTk5MzY3OTQsImV4cCI6MTY2MDU0MTU5NH0.0XGrS1ZWBbbWCFScG4sLxJM1QU5Vhw6jdEIzSYwpEII",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/v2/task/lists/62edf73c948d28cbe365bb1e/tasks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"v2",
+						"task",
+						"lists",
+						"62edf73c948d28cbe365bb1e",
+						"tasks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post lists",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MmYwYTAxYWVhNDFlOGFjYTMzNTZjMjMiLCJpYXQiOjE2NTk5MzY3OTQsImV4cCI6MTY2MDU0MTU5NH0.0XGrS1ZWBbbWCFScG4sLxJM1QU5Vhw6jdEIzSYwpEII",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"hellow world\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/v2/list/lists",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"v2",
+						"list",
+						"lists"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sign up",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"name\":\"Deva Sagayam\",\r\n    \"email\":\"devaz@gmail.com\",\r\n    \"password\":\"deva@123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"devaz@gmail.com\",\r\n    \"password\":\"deva@123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/users/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post task of list",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MmYwYTAxYWVhNDFlOGFjYTMzNTZjMjMiLCJpYXQiOjE2NTk5MzY3OTQsImV4cCI6MTY2MDU0MTU5NH0.0XGrS1ZWBbbWCFScG4sLxJM1QU5Vhw6jdEIzSYwpEII",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"third task\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/v2/task/lists/62edf73c948d28cbe365bb1e/tasks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"v2",
+						"task",
+						"lists",
+						"62edf73c948d28cbe365bb1e",
+						"tasks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update lists",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MmYwYTAxYWVhNDFlOGFjYTMzNTZjMjMiLCJpYXQiOjE2NTk5MzY3OTQsImV4cCI6MTY2MDU0MTU5NH0.0XGrS1ZWBbbWCFScG4sLxJM1QU5Vhw6jdEIzSYwpEII",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"update title\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/v2/list/lists/62edf75e948d28cbe365bb21",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"v2",
+						"list",
+						"lists",
+						"62edf75e948d28cbe365bb21"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update task",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MmYwYTAxYWVhNDFlOGFjYTMzNTZjMjMiLCJpYXQiOjE2NTk5MzY3OTQsImV4cCI6MTY2MDU0MTU5NH0.0XGrS1ZWBbbWCFScG4sLxJM1QU5Vhw6jdEIzSYwpEII",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"first task modified\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/v2/task/lists/62edf73c948d28cbe365bb1e/tasks/62edf9eb7ad1af8f552ffa61",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"v2",
+						"task",
+						"lists",
+						"62edf73c948d28cbe365bb1e",
+						"tasks",
+						"62edf9eb7ad1af8f552ffa61"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete list",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MmYwYTAxYWVhNDFlOGFjYTMzNTZjMjMiLCJpYXQiOjE2NTk5MzY3OTQsImV4cCI6MTY2MDU0MTU5NH0.0XGrS1ZWBbbWCFScG4sLxJM1QU5Vhw6jdEIzSYwpEII",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"update title\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/v2/list/lists/62edf75e948d28cbe365bb21",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"v2",
+						"list",
+						"lists",
+						"62edf75e948d28cbe365bb21"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete task",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MmYwYTAxYWVhNDFlOGFjYTMzNTZjMjMiLCJpYXQiOjE2NTk5MzY3OTQsImV4cCI6MTY2MDU0MTU5NH0.0XGrS1ZWBbbWCFScG4sLxJM1QU5Vhw6jdEIzSYwpEII",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"update title\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/v2/task/lists/62edf73c948d28cbe365bb1e/tasks/62edf9dd7ad1af8f552ffa5e",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"v2",
+						"task",
+						"lists",
+						"62edf73c948d28cbe365bb1e",
+						"tasks",
+						"62edf9dd7ad1af8f552ffa5e"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
